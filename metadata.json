@@ -1,0 +1,30 @@
+{
+  "version": {
+    "license": "MIT"
+  },
+  "name": {
+    "en-US": "Simple To-Do List"
+  },
+  "description": {
+    "en-US": "A simple to-do list extension for Firefox."
+  },
+  "summary": {
+    "en-US": "A minimal to-do list for Firefox."
+  },
+  "homepage": {
+    "en-US": "https://github.com/am9zZWY/simple-todo"
+  },
+  "default_locale": "en-US",
+  "slug": "semplice-todo-list",
+  "categories": {
+    "firefox": [
+      "other"
+    ]
+  },
+  "is_disabled": false,
+  "is_experimental": false,
+  "requires_payment": false,
+  "developer_comments": {
+    "en-US": "This is a simple to-do list extension."
+  }
+}

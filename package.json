@@ -1,0 +1,33 @@
+{
+  "name": "firefox-simple-todo",
+  "private": true,
+  "scripts": {
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check",
+    "lint": "oxlint && web-ext lint",
+    "lint:fix": "oxlint --fix",
+    "start:firefox": "web-ext run --start-url=about:debugging",
+    "build": "web-ext build",
+    "sign": "web-ext sign --channel unlisted --amo-metadata=./metadata.json",
+    "release": "web-ext sign --channel listed --amo-metadata=./metadata.json",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.58.2",
+    "web-ext": "^9.4.0"
+  },
+  "devDependencies": {
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/exec": "^7.1.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^12.0.6",
+    "@semantic-release/release-notes-generator": "^14.1.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.3.2",
+    "oxfmt": "^0.36.0",
+    "oxlint": "^1.51.0"
+  },
+  "trustedDependencies": [
+    "spawn-sync"
+  ]
+}

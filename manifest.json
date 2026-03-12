@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Simple To-Do List",
+    "version": "1.0.0",
+    "description": "A simple to-do list extension",
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "simple-todo@am9zZWY.de",
+            "data_collection_permissions": {
+                "required": [
+                    "none"
+                ]
+            }
+        }
+    },
+    "permissions": [
+        "storage"
+    ]
+}
